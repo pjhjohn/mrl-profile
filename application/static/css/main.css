@@ -1,0 +1,180 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,700);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+@font-face {
+  font-family: 'Nanum Myeongjo';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Regular.eot);
+  src: url(//fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Regular.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Regular.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Regular.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Regular.ttf) format('truetype');
+}
+* {
+	margin:0px;
+	padding:0px;
+}
+html, body {
+  height:100%;
+}
+ul {
+  list-style-type:none;
+}
+
+/* Navigation */
+nav {
+	padding-top:60px;
+	width:150px;
+	height:100%;
+  position:fixed;
+	background-color:#00BFA5;
+  list-style: none;
+  -webkit-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.5);
+}
+nav > li {
+  position: relative;
+  display: block;
+}
+nav > li > a {
+	font-family: 'Quicksand', sans-serif; font-weight: 700; 
+	color : #424242;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size:12px;
+}
+nav > li > a:hover,
+nav > li > a:focus {
+  font-size:12px;
+  text-decoration: none;
+  background-color: #eee;
+}
+nav > li > a > div {
+	display : inline-block;
+}
+nav > li > a > div.tag {
+	margin-left : 15px;
+}
+nav > li.active {
+  background-color: #424242;
+}
+nav > li.active > a {
+  background-color: #424242;
+  color : #00BFA5;
+}
+
+/* Body - Common */
+body {
+	width:100%;
+	height:100%;
+	background-color:#424242;
+}
+#container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color:#eee;
+}
+@media (min-width: 768px) {
+  #container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  #container {
+    width: 970px;
+  }
+}
+#container > div {
+  padding : 20px 10px 20px 10px;
+}
+
+#container > div {
+  border-bottom: 2px solid #eee;
+  margin-bottom:10px;
+}
+
+#container > div a {
+  text-decoration: none;
+  color : #00BFA5;
+}
+#container > div a:hover {
+  text-decoration: none;
+  color : #FFEB3B;
+}
+#container h1, h2, h3, h4, h5, h6 p, span, li {
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+/* last-update */
+#last-update {
+  margin : 5px;
+  color : #eee;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300; 
+  position: fixed;
+  bottom:0;
+  right:0;
+  z-index: 9999;
+  pointer-events: none;  
+}
+
+/* powered-by : sticky footer */
+#wrapper {
+  min-height: 100%;
+  margin-bottom: -40px; /* equal to footer height */
+}
+#wrapper:after {
+  content: "";
+  display: block;
+}
+#footer, #wrapper:after {
+  height: 40px; 
+}
+#footer {
+  color : #eee;
+  padding-top : 10px;
+  background-color: #5C6BC0;
+  font-family: 'Droid Serif', serif;
+  text-align: center;
+}
+#footer > a,
+#footer > a:active {
+  color : #424242;
+  text-decoration: none;
+}
+#footer > a:hover {
+  color : #eee;
+}
+
+/* Detail */
+#profile > div {
+  display : inline-block;
+  vertical-align:top;
+  height : 300px;
+}
+#profile-image {
+  width : 300px;
+}
+#profile-image > img {
+  max-width : 300px;
+}
+#profile-description {
+  margin-left : 15px;
+}
+#profile-description > div {
+  margin : 5px;
+  height : 50%;
+}
+#profile-kr h1, li {
+  font-family: 'Nanum Myeongjo'
+}
+.tabinto > li{
+  padding-left:10px;
+}
