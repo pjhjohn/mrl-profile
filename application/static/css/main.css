@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Quicksand:300,700);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,700);
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
 @font-face {
   font-family: 'Nanum Myeongjo';
@@ -11,8 +11,8 @@
        url(//fonts.gstatic.com/ea/nanummyeongjo/v4/NanumMyeongjo-Regular.ttf) format('truetype');
 }
 * {
-	margin:0px;
-	padding:0px;
+  margin:0px;
+  padding:0px;
 }
 html, body {
   height:100%;
@@ -23,11 +23,11 @@ ul {
 
 /* Navigation */
 nav {
-	padding-top:60px;
-	width:150px;
-	height:100%;
+  padding-top:60px;
+  width:150px;
+  height:100%;
   position:fixed;
-	background-color:#00BFA5;
+  background-color:#00BFA5;
   list-style: none;
   -webkit-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.5);
@@ -38,8 +38,7 @@ nav > li {
   display: block;
 }
 nav > li > a {
-	font-family: 'Quicksand', sans-serif; font-weight: 700; 
-	color : #424242;
+  color : #424242;
   position: relative;
   display: block;
   padding: 10px 15px;
@@ -52,11 +51,15 @@ nav > li > a:focus {
   text-decoration: none;
   background-color: #eee;
 }
+nav > li > a span {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700; 
+ }
 nav > li > a > div {
-	display : inline-block;
+  display : inline-block;
 }
 nav > li > a > div.tag {
-	margin-left : 15px;
+  margin-left : 15px;
 }
 nav > li.active {
   background-color: #424242;
@@ -68,9 +71,9 @@ nav > li.active > a {
 
 /* Body - Common */
 body {
-	width:100%;
-	height:100%;
-	background-color:#424242;
+  width:100%;
+  height:100%;
+  background-color:#424242;
 }
 #container {
   padding-right: 15px;
@@ -117,7 +120,7 @@ body {
   margin : 5px;
   color : #eee;
   font-family: 'Quicksand', sans-serif;
-  font-weight: 300; 
+  font-weight: 400; 
   position: fixed;
   bottom:0;
   right:0;
