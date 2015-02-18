@@ -39,5 +39,8 @@ $(document).ready(function() {
     $('nav>li').click(function(){
         $('nav>li').removeClass('active');
         $(this).addClass('active');
-    })
+    });
+
+    // Scrollspy it.
+    $('body').scrollspy({offset:30});
 })
